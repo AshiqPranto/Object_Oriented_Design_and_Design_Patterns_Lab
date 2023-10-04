@@ -14,7 +14,17 @@ public class Owner implements IOwner{
     private int numOfDog;
     private int numOfCat;
     private int numOfBird;
-      
+    public Owner()
+    {
+        this.name = "Default name";
+        dogs = new ArrayList<>();
+        numOfBird = 0;
+        numOfDog = 0;
+        numOfCat = 0;
+        dogs = new ArrayList<>();
+        cats = new ArrayList<>();
+        birds = new ArrayList<>();
+    }
     public Owner(String name, int age, String address, String email)
     {
         this.name = name;
@@ -22,6 +32,8 @@ public class Owner implements IOwner{
         this.address = address;
         this.email = email;
         dogs = new ArrayList<>();
+        cats = new ArrayList<>();
+        birds = new ArrayList<>();
         numOfBird = 0;
         numOfDog = 0;
         numOfCat = 0;
