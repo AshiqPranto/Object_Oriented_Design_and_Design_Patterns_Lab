@@ -2,31 +2,19 @@ package Assignment2;
 
 import java.time.LocalDate;
 
-public class Pet {
-    private String name;
-    private int age;
-    private String breed;
-    private LocalDate lastMedicalCheckupDate;
-    public Pet()
-    {
-        
-    }
+public abstract class Pet {
+    protected String name;
+    protected int age;
+    protected LocalDate lastMedicalCheckupDate;
 
-    public Pet(String name, int age, String breed) {
+    public Pet(String name, int age) {
         this.name = name;
         this.age = age;
-        this.breed = breed;
     }
 
-    public void feed() {
-        System.out.println("General feed function");
-    }
+    public abstract void feed();
 
-    public void play() {
-        System.out.println("General play function");
-    }
+    public abstract void play();
 
-    public void makeSound() {
-        System.out.println("General make sound function");
-    }
+    public abstract void makeSound();
 }
