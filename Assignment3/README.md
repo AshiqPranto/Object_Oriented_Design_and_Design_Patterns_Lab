@@ -39,14 +39,6 @@ This console application demonstrates the use of the Facade design pattern to si
 - **Methods**:
   - `main()`: The main method of the application where a `Customer` interacts with the `BankService` to create accounts, deposit, withdraw, and transfer money.
 
-## Usage
-
-1. Clone or download the project from the repository.
-
-2. Compile and run the application.
-
-3. Follow the prompts in the console to create accounts and perform banking operations.
-
 ## Conclusion
 
 The Facade design pattern simplifies complex subsystem interactions by providing a unified interface. This console app showcases how the `BankService` facade allows clients to perform banking operations without worrying about the intricacies of individual account types. It promotes code simplicity, maintainability, and encapsulation of subsystem complexities.
