@@ -15,12 +15,12 @@ public class Customer {
         myBankService.showCurrentBalance(myChequing);
         myBankService.withdrawMoney(myChequing, new BigDecimal(100.00));
         myBankService.showCurrentBalance(myChequing);
-
+        
         // int myInvestment = myBankService.createNewAccount("investment", new BigDecimal(1000.00));
         // myBankService.transferMoney(mySaving, myInvestment, new BigDecimal(300.00));
         int mySaving = myBankService.createNewAccount("saving",
         new BigDecimal(500.00));
-    
+        
         myBankService.showCurrentBalance(mySaving);
         myBankService.addMoney(mySaving, new BigDecimal(300.00));
         myBankService.showCurrentBalance(mySaving);
@@ -36,6 +36,9 @@ public class Customer {
         myBankService.showCurrentBalance(myInvestment);
         myBankService.withdrawMoney(myInvestment, new BigDecimal(100.00));
         myBankService.showCurrentBalance(myInvestment);
-    }
 
+        
+        myBankService.transferMoney(myChequing, mySaving, new BigDecimal(100.00));
+    }
+    
 }
